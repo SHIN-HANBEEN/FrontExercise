@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse; /*테이블과 셀 사이의 간격 없애기 */
+        }
+        td, th {
+            padding: 10px 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>키</th>
+                <th>전화번호</th>
+                <th>주소지</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">A</td>
+                <td colspan="2" rowspan="2">B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
