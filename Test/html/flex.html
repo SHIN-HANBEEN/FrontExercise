@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        div {
+            margin-top: 20px;
+        }
+        p {
+            border: solid 1px;
+            width: 300px;
+            height: 100px;
+        }
+        .child1 {
+            background-color: lavender;
+        }
+        .child2 {
+            background-color: darkgray;
+        }
+        .child3 {
+            background-color: gold;
+        }
+        .parent {
+            display: flex;
+        }
+        #parent1 {
+            flex-direction: row;
+        }
+        #parent2 {
+            flex-direction: column;
+        }
+        #paren3 {
+            flex-wrap: wrap;
+        }
+        #parent4 {
+            border: 3px solid red;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>flex로 자식요소들 정렬하기</h1>
+    <div class="parent" id="parent1">
+        <p class="child1">child1</p>
+        <p class="child2">child2</p>
+        <p class="child3">child3</p>
+    </div>
+    <div class="parent" id="parent2">
+        <p class="child1">child1</p>
+        <p class="child2">child2</p>
+        <p class="child3">child3</p>
+    </div>
+    <div class="parent" id="parent3">
+        <p class="child1">child1</p>
+        <p class="child2">child2</p>
+        <p class="child3">child3</p>
+        <p class="child1">child1</p>
+        <p class="child2">child2</p>
+        <p class="child3">child3</p>
+    </div>
+    <div class="parent" id="parent4">
+        <p class="child1">child1</p>
+        <p class="child2">child2</p>
+        <p class="child3">child3</p>
+    </div>
+</body>
+</html>
